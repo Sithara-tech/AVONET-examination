@@ -1,0 +1,72 @@
+package com.example.frontend;
+
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="persons")
+public class person {
+	
+	@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	private String PersonfirstName;
+	private String PersonlastName;
+	private String DateofBirth;
+	private int PhoneNumber;
+	private double NIC;
+	private String Gender;
+	private double Address;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getPersonfirstName() {
+		return PersonfirstName;
+	}
+	public void setPersonfirstName(String personfirstName) {
+		PersonfirstName = personfirstName;
+	}
+	public String getPersonlastName() {
+		return PersonlastName;
+	}
+	public void setPersonlastName(String personlastName) {
+		PersonlastName = personlastName;
+	}
+	public String getDateofBirth() {
+		return DateofBirth;
+	}
+	public void setDateofBirth(String dateofBirth) {
+		DateofBirth = dateofBirth;
+	}
+	public int getPhoneNumber() {
+		return PhoneNumber;
+	}
+	public void setPhoneNumber(int phoneNumber) {
+		PhoneNumber = phoneNumber;
+	}
+	public double getNIC() {
+		return NIC;
+	}
+	public void setNIC(double nIC) {
+		NIC = nIC;
+	}
+	public String getGender() {
+		return Gender;
+	}
+	public void setGender(String gender) {
+		Gender = gender;
+	}
+	public double getAddress() {
+		return Address;
+	}
+	public void setAddress(double address) {
+		Address = address;
+	}  
+	
+	
+
+}
